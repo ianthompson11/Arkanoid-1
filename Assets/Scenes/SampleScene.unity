@@ -1180,6 +1180,7 @@ GameObject:
   - component: {fileID: 716232718}
   - component: {fileID: 716232717}
   - component: {fileID: 716232720}
+  - component: {fileID: 716232721}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -1278,7 +1279,7 @@ Transform:
   m_GameObject: {fileID: 716232716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1320,6 +1321,20 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.11
+--- !u!114 &716232721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 716232716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 504bd29d205a2f343ba0f220f8769c80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigidBody2D: {fileID: 716232717}
+  speed: 300
 --- !u!1001 &731575053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2027,7 +2042,7 @@ Rigidbody2D:
   m_UseAutoMass: 0
   m_Mass: 1
   m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_AngularDamping: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -2039,7 +2054,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 6
 --- !u!212 &1475743024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2104,7 +2119,7 @@ Transform:
   m_GameObject: {fileID: 1475743022}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2464,6 +2479,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 810868387285913689, guid: 2fd12b6ab29425f4296f8e3ec224868e, type: 3}
   m_PrefabInstance: {fileID: 1903693019}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1912013586
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860983303980233867, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_Name
+      value: DeadZone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
 --- !u!1001 &2095517199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2673,3 +2745,4 @@ SceneRoots:
   - {fileID: 716232719}
   - {fileID: 108898573}
   - {fileID: 1706517699}
+  - {fileID: 1912013586}

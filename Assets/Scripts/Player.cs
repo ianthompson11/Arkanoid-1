@@ -15,6 +15,17 @@ public class Player : MonoBehaviour
     void Update()
     {
 
+        inputValue = Input.GetAxisRaw("Horizontal");
+
+        if (inputValue == 1){
+            direction = Vector2.right;
+        }else if (inputValue == -1){
+            direction = Vector2.left;
+        }else{
+            direction = Vector2.zero;
+        }
+
+        ribidBody2D.AddForce(direction * moveSpeed * Time.deltaTime * 100);
         
     }
 }
