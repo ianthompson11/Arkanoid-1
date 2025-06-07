@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
 		if (lives <= 0){
 
-			SceneManagement.LoadScene("GameOver");
+			SceneManager.LoadScene("GameOver");
 
 		}else{
 			ResetLevel();

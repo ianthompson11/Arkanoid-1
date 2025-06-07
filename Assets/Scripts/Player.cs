@@ -11,7 +11,11 @@ public class Player : MonoBehaviour
     public float moveSpeed = 25;
 
     private Vector2 direction;
+	Vector2 startPosition;
 
+	private void Start(){
+		startPosition = transform.position;
+	}
     void Update()
     {
 
@@ -28,4 +32,8 @@ public class Player : MonoBehaviour
         ribidBody2D.AddForce(direction * moveSpeed * Time.deltaTime * 100);
         
     }
+    	public void ResetPlayer(){
+		transform.position = startPosition;
+		ribidBody2D.linearVelocity = Vector2.zero;
+	}
 }
