@@ -18,4 +18,12 @@ public class Ball : MonoBehaviour
 		rigidBody2D.AddForce(velocity*speed);
 	}
 
+	private void OnCollisionEnter2D(Collision2D collision){
+
+		if(collision.gameObject.CompareTag("DeadZone")){
+			FindObjectOfType<GameManager>().LoseHealth();
+		}
+
+	}
+
 }

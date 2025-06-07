@@ -1183,7 +1183,7 @@ GameObject:
   - component: {fileID: 716232721}
   m_Layer: 0
   m_Name: Ball
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1204,7 +1204,7 @@ Rigidbody2D:
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 73de57726df62344f9fff90f32c47d4e, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -1467,6 +1467,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 810868387285913689, guid: 2fd12b6ab29425f4296f8e3ec224868e, type: 3}
   m_PrefabInstance: {fileID: 815627009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &953444276
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 953444277}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &953444277
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953444276}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.226, y: 0.05174, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1123843861
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2345,6 +2376,7 @@ Transform:
   - {fileID: 632999274}
   - {fileID: 22941963}
   - {fileID: 1123843862}
+  - {fileID: 2112892266}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1886996728
@@ -2485,15 +2517,15 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1706517699}
     m_Modifications:
     - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -2.226
       objectReference: {fileID: 0}
     - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5
+      value: -5.05174
       objectReference: {fileID: 0}
     - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2505,11 +2537,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2529,6 +2561,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8860983303980233867, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
       propertyPath: m_Name
+      value: DeadZone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8860983303980233867, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+      propertyPath: m_TagString
       value: DeadZone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -2668,6 +2704,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 810868387285913689, guid: 2fd12b6ab29425f4296f8e3ec224868e, type: 3}
   m_PrefabInstance: {fileID: 2111116178}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &2112892266 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6910731761229803546, guid: f0714a4c9c65a1e419d37e43b07b88d8, type: 3}
+  m_PrefabInstance: {fileID: 1912013586}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2138361076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2745,4 +2786,4 @@ SceneRoots:
   - {fileID: 716232719}
   - {fileID: 108898573}
   - {fileID: 1706517699}
-  - {fileID: 1912013586}
+  - {fileID: 953444277}
