@@ -12,6 +12,10 @@ public class Ball : MonoBehaviour
 
 	Vector2 startPosition;
 
+	public AudioSource audioSource;
+	public AudioClip playerSound, brickSound;
+
+
 	void Start(){
 
 		startPosition = transform.position; 
@@ -22,6 +26,15 @@ public class Ball : MonoBehaviour
 
 		if(collision.gameObject.CompareTag("DeadZone")){
 			FindObjectOfType<GameManager>().LoseHealth();
+		}
+
+		if (collision.gameObject.GetComponent<Player>()){
+			audioSource.clip = playerSound;
+			audioSource.Play();
+		}
+		if (collision.gameObject.GetComponent<Brick>()){
+			audioSource.clip = brickSound;
+			audioSource.Play();
 		}
 
 	}
