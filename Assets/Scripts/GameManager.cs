@@ -23,6 +23,11 @@ public class GameManager : MonoBehaviour
 
 		FindObjectOfType<Ball>().ResetBall();
 		FindObjectOfType<Player>().ResetPlayer();
+	}
+	public void CheckLevelCompleted(){
+		if (transform.childCount <= 1){
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		}
 
 	}
 }
