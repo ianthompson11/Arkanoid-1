@@ -26,9 +26,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level5.unity
     guid: f75bdab60392b9845bbe189fdac19a11
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Inicio 1.unity
     guid: 377ae25506a45c041a418e5fbd230cfb
+  - enabled: 1
+    path: Assets/Scenes/Felicidades.unity
+    guid: 4570ba4d5eccd2f4d90180adb5d61152
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 19a3d1f7c8683304995307455a2843ba
