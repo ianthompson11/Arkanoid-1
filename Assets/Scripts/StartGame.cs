@@ -9,5 +9,9 @@ public class StartGame : MonoBehaviour
 
 		SceneManager.LoadScene("Level1"); //Esta linea va a cargar la escena
 	}
+	public void Niveles(){
+
+		SceneManager.LoadScene("LevelControl"); //Esta linea va a cargar la escena
+	}
 }
 
